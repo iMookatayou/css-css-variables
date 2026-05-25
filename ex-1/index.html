@@ -8,9 +8,80 @@
     <title>Hack Hours CSS Variables - Ex 1</title>
   </head>
   <body>
-    <div class="introduction">
-      <h1>CSS Variable</h1>
-      <h2>It's cool 🌟</h2>
+    <div class="container">
+      <div class="intro">
+        <h1>CSS Variable</h1>
+        <h2>It's cool 🌟</h2>
+      </div>
+
+      <div class="chart">
+        <section class="card">
+          <h3>Color Chart</h3>
+          <table class="vars-table">
+            <tr><th>Color</th><th>Value</th><th>Swatch</th></tr>
+            <tr><td>Branding Color</td><td>var(--color-brand)</td><td><span class="swatch" style="background:var(--color-brand)"></span></td></tr>
+            <tr><td>Secondary Color</td><td>var(--color-secondary)</td><td><span class="swatch" style="background:var(--color-secondary)"></span></td></tr>
+            <tr><td>Highlight Color</td><td>var(--color-highlight)</td><td><span class="swatch" style="background:var(--color-highlight)"></span></td></tr>
+            <tr><td>Muted Color</td><td>var(--color-muted)</td><td><span class="swatch" style="background:var(--color-muted)"></span></td></tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h3>Margin Levels</h3>
+          <table class="vars-table">
+            <tr><th>Level</th><th>Value</th></tr>
+            <tr><td>Level 1</td><td>var(--space-1)</td></tr>
+            <tr><td>Level 2</td><td>var(--space-2)</td></tr>
+            <tr><td>Level 3</td><td>var(--space-3)</td></tr>
+            <tr><td>Level 4</td><td>var(--space-4)</td></tr>
+            <tr><td>Level 5</td><td>var(--space-5)</td></tr>
+          </table>
+          <div style="margin-top:12px">
+            <div style="background:#013a4a;padding:8px;border-radius:4px;color:var(--text-on-panel)">Container</div>
+            <div class="box" style="margin:var(--space-1)">Box with margin: var(--space-1)</div>
+            <div class="box" style="margin:var(--space-2)">Box with margin: var(--space-2)</div>
+            <div class="box" style="margin:var(--space-3)">Box with margin: var(--space-3)</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Padding Levels</h3>
+          <table class="vars-table">
+            <tr><th>Level</th><th>Value</th></tr>
+            <tr><td>Level 1</td><td>var(--space-1)</td></tr>
+            <tr><td>Level 2</td><td>var(--space-2)</td></tr>
+            <tr><td>Level 3</td><td>var(--space-3)</td></tr>
+            <tr><td>Level 4</td><td>var(--space-4)</td></tr>
+            <tr><td>Level 5</td><td>var(--space-5)</td></tr>
+          </table>
+          <div style="margin-top:12px">
+            <div class="box" style="padding:var(--space-1)">Box padding: var(--space-1)</div>
+            <div class="box" style="padding:var(--space-2)">Box padding: var(--space-2)</div>
+            <div class="box" style="padding:var(--space-4)">Box padding: var(--space-4)</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Font Size Chart</h3>
+          <table class="vars-table">
+            <tr><th>Size</th><th>Value</th></tr>
+            <tr><td>Small</td><td>var(--size-small)</td></tr>
+            <tr><td>Medium</td><td>var(--size-medium)</td></tr>
+            <tr><td>Large</td><td>var(--size-large)</td></tr>
+            <tr><td>Extra Large</td><td>var(--size-xlarge)</td></tr>
+            <tr><td>Double Extra Large</td><td>var(--size-2x)</td></tr>
+            <tr><td>Triple Extra Large</td><td>var(--size-3x)</td></tr>
+          </table>
+          <div class="fs-list" style="margin-top:12px">
+            <div class="fs-sample" style="font-size:var(--size-small)">Small — var(--size-small)</div>
+            <div class="fs-sample" style="font-size:var(--size-medium)">Medium — var(--size-medium)</div>
+            <div class="fs-sample" style="font-size:var(--size-large)">Large — var(--size-large)</div>
+            <div class="fs-sample" style="font-size:var(--size-xlarge)">Extra Large — var(--size-xlarge)</div>
+            <div class="fs-sample" style="font-size:var(--size-2x)">Double XL — var(--size-2x)</div>
+            <div class="fs-sample" style="font-size:var(--size-3x)">Triple XL — var(--size-3x)</div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>

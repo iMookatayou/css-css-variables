@@ -5,3 +5,35 @@
 }
 
 /* Start coding here */
+:root{
+  /* Colors */
+  --color-brand: #ff7f50;
+  --color-secondary: cornsilk;
+  --color-highlight: #d2691e;
+  --color-muted: #a9a9a9;
+
+  /* Spacing (margins & padding) */
+  --space-1: 1px;
+  --space-2: 5px;
+  --space-3: 10px;
+  --space-4: 15px;
+  --space-5: 20px;
+
+  /* Font sizes */
+  --size-small: 12px;
+  --size-medium: 16px;
+  --size-large: 20px;
+  --size-xlarge: 30px;
+  --size-2x: 50px;
+  --size-3x: 100px;
+}
+
+.intro{
+  background-color: var(--color-secondary);
+  padding: var(--space-5);
+}
+
+.intro h1{
+  color: var(--color-brand);
+  font-size: var(--size-3x);
+}
